@@ -3,15 +3,17 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      "2xl": { max: "1535px" },
-      xl: { max: "1279px" },
-      lg: { max: "1023px" },
-      md: { max: "767px" },
-      sm: { max: "639px" },
-      xs: { max: "479px" }, // Tambahan opsional untuk layar sangat kecil
+      xs: { max: "480px" },
+      sm: { max: "640px" },
+      md: { max: "768px" },
+      lg: { max: "1024px" },
+      xl: { max: "1280px" },
+      "2xl": { max: "1536px" },
     },
     fontFamily: {
-      f1: ["Poppins", "sans-serif"],
+      body: ["Poppins", "sans-serif"],
+      subHeader: ["Cal Sans", "sans-serif"],
+      header: ["Special Gothic Expanded One", "cursive"],
     },
     extend: {
       colors: {
