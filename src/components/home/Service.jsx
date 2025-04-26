@@ -3,7 +3,7 @@ import HeaderSectionBtn from "../shared/HeaderSectionBtn";
 import CardService from "../shared/CardService";
 export default function Service() {
   return (
-    <section className="w-full h-screen md:h-auto flex flex-col justify-center">
+    <section className="w-full h-screen md:h-auto flex flex-col justify-center md:mt-16">
       <HeaderSectionBtn title="Service" subtitle="Provide" highlight="Services"></HeaderSectionBtn>
       <div className="px-[10%] mt-11 flex gap-10 justify-around">
         <CardService></CardService>
