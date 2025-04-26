@@ -17,14 +17,20 @@ export default {
     },
     extend: {
       colors: {
-        blue: "#4046f6",
-        white: "#fafbfd",
-        "white-ghost": "#f5f5fc",
-        "white-floral": "#fffaf0",
-        "white-blue": "#f4f4ff",
-        "white-lavender": "#fbf2f5",
-        black: "#151c22",
-        grey: "#586275",
+        // blue: "#4046f6",
+        // white: "#fafbfd",
+        // "white-ghost": "#f5f5fc",
+        // "white-floral": "#fffaf0",
+        // "white-blue": "#f4f4ff",
+        // "white-lavender": "#fbf2f5",
+        // black: "#151c22",
+        // grey: "#586275",
+        black: "#000000",
+        text: "#2b2b2b",
+        violet: "#7b2eec",
+        cartreuse: "#d8f602",
+        gray: "#9bb9bb",
+        platinum: "#e6e6e6",
       },
       keyframes: {
         marquee: {

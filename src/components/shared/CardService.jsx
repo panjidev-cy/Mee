@@ -21,7 +21,7 @@ const services = [
 
 export default function CardService() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 font-f1">
+    <div className="grid md:grid-cols-1 grid-cols-3 gap-6 p-4 font-f1">
       {services.map((service, idx) => (
         <div key={idx} className="rounded-2xl bg-white-blue shadow-sm p-6 flex flex-col gap-4 transition border-2 border-[#4046f641] hover:shadow-md">
           <div className={`w-14 h-14 rounded-full  ${service.gradient} flex items-center justify-center shadow`}>
