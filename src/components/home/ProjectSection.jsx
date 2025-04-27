@@ -56,7 +56,7 @@ const imageProject = [
 const ProjectSection = () => {
   return (
     <div className="flex flex-col items-center justify-center my-10">
-      <h1 className="text-5xl font-subHeader font-medium mb-8">project</h1>
+      <h1 className="text-5xl md:text-4xl font-subHeader font-medium mb-8">project</h1>
 
       {/* Scrollable container */}
       <div className="w-full px-4 sm:px-8 md:px-10 overflow-x-auto scrollbar-hide">
@@ -72,8 +72,8 @@ const ProjectSection = () => {
 
                 {/* Text */}
                 <div className="absolute bottom-4 left-6 ">
-                  <h2 className="text-5xl md:text-xl sm:text-lg font-subHeader font-medium text-white">Lorem ipsum dolor sit amet</h2>
-                  <p className="text-lg font-body font-medium text-gray mt-2">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                  <h2 className="text-5xl md:text-xl sm:text-lg font-subHeader font-medium text-white mix-blend-difference">Lorem ipsum dolor sit amet</h2>
+                  <p className="text-lg md:text-base font-body font-medium text-gray mt-2 md:hidden">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
                 </div>
               </div>
             </div>
