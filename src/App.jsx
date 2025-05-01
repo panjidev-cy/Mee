@@ -4,6 +4,7 @@ function App() {
   return (
     <>
       <Home></Home>
+      <p>berhasil</p>
     </>
   );
 }
