@@ -1,5 +1,5 @@
 import Hero from "../home/Hero";
-import Tools from "../home/Tools";
+import Tools from "../home/tools";
 import ScrollingCards from "../home/ScrollingCard";
 
 export default function Home() {
