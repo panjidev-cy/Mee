@@ -11,26 +11,51 @@ export default {
       "2xl": { max: "1536px" },
     },
     fontFamily: {
-      body: ["Poppins", "sans-serif"],
-      subHeader: ["Cal Sans", "sans-serif"],
-      header: ["Special Gothic Expanded One", "cursive"],
+      cal: ['"Cal Sans"', "sans-serif"],
+      fredoka: ['"Fredoka"', "sans-serif"],
+      jua: ['"Jua"', "sans-serif"],
+      poppins: ['"Poppins"', "sans-serif"],
     },
     extend: {
+      fontSize: {
+        "fluid-h1": "clamp(3rem, 7vw, 6rem)",
+        "fluid-h2": "clamp(1.5rem, 4vw, 3rem)",
+        "fluid-h3": "clamp(1.25rem, 2vw, 2rem)",
+        "fluid-h4": "clamp(1rem, 1.8vw, 1.7rem)",
+        "fluid-body": "clamp(.8rem, 1.5vw, 1.25rem)",
+        "fluid-caption": "clamp(0.875rem, 1.5vw, 1rem)",
+      },
       colors: {
-        // blue: "#4046f6",
-        // white: "#fafbfd",
-        // "white-ghost": "#f5f5fc",
-        // "white-floral": "#fffaf0",
-        // "white-blue": "#f4f4ff",
-        // "white-lavender": "#fbf2f5",
-        // black: "#151c22",
-        // grey: "#586275",
-        black: "#000000",
-        text: "#2b2b2b",
-        violet: "#7b2eec",
-        cartreuse: "#d8f602",
-        gray: "#9bb9bb",
-        platinum: "#e6e6e6",
+        // === White shades background ===
+        ghost_white: "#f4f4f8", // catatan: digunakan versi terakhir yang ditimpa
+        lavender_web: "#eeecff",
+        periwinkle: "#dfdbff",
+        risd_blue: "#4a52eb",
+        // === Blue shades ===
+        blue: "#4a25eb",
+        lavender: "#e8e9fc",
+        periwinkle: "#d1d3fa",
+        vistaBlue: "#a3a7f5",
+        mediumSlateBlue: "#757bf0",
+        majorelleBlue: "#474feb",
+        risdBlue: "#4a52eb",
+        zaffre: "#141cb8",
+        phthaloBlue: "#0f158a",
+        federalBlue: "#0a0e5c",
+
+        // Green-Yellow shades
+        mindaro: "#d1f577",
+        mindaroAlt1: "#dff8a0",
+        mindaroAlt2: "#cff570",
+        lime: "#bff141",
+        beige: "#f7fde7",
+        nyanza: "#effccf",
+
+        // Dark/Neutral shades
+        eerieBlack: "#19191d",
+        jet: "#2f2f37",
+        davysGray: "#474752",
+        dimGray: "#5e5e6e",
       },
       keyframes: {
         marquee: {
