@@ -5,7 +5,7 @@ import ScrollingCards from "../home/ScrollingCard";
 export default function Home() {
   return (
     <>
-      <div className=" h-auto md:h-screen md:flex md:flex-col md:justify-center">
+      <div className=" h-auto md:h-screen md:flex md:flex-col md:justify-end md:pb-16 ">
         <Hero></Hero>
         <Tools></Tools>
       </div>
