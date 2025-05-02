@@ -17,7 +17,7 @@ export default function Hero() {
               <Button
                 content="Hire Me"
                 arrow={false}
-                ref="https://mail.google.com/mail/?view=cm&fs=1&to=panjibhekti1@gmail.com&su=Permintaan%20Jasa&body=Halo,%20saya%20tertarik%20dengan%20jasa%20Anda.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
+                ref="mailto://mail.google.com/mail/?view=cm&fs=1&to=panjibhekti1@gmail.com&su=Permintaan%20Jasa&body=Halo,%20saya%20tertarik%20dengan%20jasa%20Anda.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
                 target="_blank"
               ></Button>
             </div>
