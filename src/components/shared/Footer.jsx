@@ -53,8 +53,8 @@ export default function Footer() {
         <div className="w-full h-auto bg-ghost_white mt-10">
           <Paddings>
             <div className="flex justify-between py-7">
-              <p className="text-center text-slate-500 text-sm ">© 2023 vibloo</p>
-              <p className="text-center text-slate-500 text-sm">lets work with me</p>
+              <p className="text-center text-slate-500 text-[clamp(11px,1.1vw,13px)] ">© 2023 vibloo</p>
+              <p className="text-center text-slate-500 text-[clamp(11px,1.1vw,13px)]">lets work with me</p>
             </div>
           </Paddings>
         </div>
