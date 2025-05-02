@@ -3,6 +3,7 @@ import Tools from "../home/tools";
 import ScrollingCards from "../home/ScrollingCard";
 import Project from "../home/Projects";
 import Faq from "../home/Faq";
+import Footer from "../components/shared/Footer";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
       <ScrollingCards></ScrollingCards>
       <Project></Project>
       <Faq></Faq>
+      <Footer></Footer>
     </>
   );
 }
