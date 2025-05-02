@@ -61,20 +61,22 @@ const imageProject = [
 export default function Project() {
   return (
     <div className="w-full px-4 md:px-10 py-10 flex flex-col items-center">
-      <h2 className="text-fluid-h2 font-poppins font-semibold text-slate-700 mb-3">Projects</h2>
+      <h2 className="text-fluid-h2 font-poppins font-semibold text-slate-600 mb-3">Projects</h2>
 
-      <div className="w-full h-auto mt-5">
-        <div className="relative w-full p-4 bg-periwinkle max-w-[950px] aspect-[16/9] mx-auto overflow-hidden shadow-md rounded-xl">
-          {/* Gambar latar */}
-          <div className="absolute inset-0 w-full objekt-cover flex items-center justify-center px-10 ">
-            <img src={web} alt="Background" className="w-full " />
-          </div>
+      <div className="w-full h-auto mt-5 gap-10 flex overflow-x-auto scrollbar-hide">
+        {imageProject.map((item, index) => (
+          <div key={index} className="flex-shrink-0 relative w-full p-4 bg-periwinkle max-w-[950px] aspect-[16/9] mx-auto overflow-hidden shadow-md rounded-xl">
+            {/* Gambar latar */}
+            <div className="absolute inset-0 w-full object-cover flex items-center justify-center px-10 ">
+              <img src={item.image} alt="Background" className="w-full " />
+            </div>
 
-          {/* Konten di atas gambar */}
-          <div className="relative z-10 flex items-center justify-center h-full w-full">
-            <h1 className="text-white text-xl sm:text-4xl font-bold text-center drop-shadow-md">Judul Kamu</h1>
+            {/* Konten di atas gambar */}
+            <div className="relative z-10 flex items-end justify-start h-full w-full">
+              <h1 className="text-slate-500 font-poppins text-fluid-h3 mix-blend-difference font-semibold text-center drop-shadow-md">{item.title}</h1>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
