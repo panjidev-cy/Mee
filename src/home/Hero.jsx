@@ -14,7 +14,12 @@ export default function Hero() {
             <h3 className="font-poppins text-fluid-h3 font-semibold mt-10 md:mt-6 text-slate-500">I'm a web developer</h3>
             <p className="font-poppins text-fluid-body font-normal text-slate-400 md:w-4/5">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
             <div className="mt-5">
-              <Button content="Hire Me" arrow={false}></Button>
+              <Button
+                content="Hire Me"
+                arrow={false}
+                ref="https://mail.google.com/mail/?view=cm&fs=1&to=panjibhekti1@gmail.com&su=Permintaan%20Jasa&body=Halo,%20saya%20tertarik%20dengan%20jasa%20Anda.%20Bisakah%20kita%20diskusi%20lebih%20lanjut?"
+                target="_blank"
+              ></Button>
             </div>
           </div>
           <div className=" h-full md:h-auto">
