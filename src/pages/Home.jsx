@@ -2,6 +2,7 @@ import Hero from "../home/Hero";
 import Tools from "../home/tools";
 import ScrollingCards from "../home/ScrollingCard";
 import Project from "../home/Projects";
+import Faq from "../home/Faq";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       </div>
       <ScrollingCards></ScrollingCards>
       <Project></Project>
+      <Faq></Faq>
     </>
   );
 }
