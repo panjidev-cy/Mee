@@ -18,7 +18,7 @@ export default function Faq() {
 
   return (
     <Paddings>
-      <div className="w-full  px-4 py-16 font-poppins">
+      <div className="w-full h-screen lg:h-auto px-4 py-16 font-poppins">
         <h2 className="text-fluid-h2 font-bold text-center text-slate-600">Questions that nobody asked</h2>
         <p className="text-center text-slate-500 text-lg mt-2 mb-8">But still may be helpful</p>
 
