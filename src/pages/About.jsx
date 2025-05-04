@@ -1,8 +1,4 @@
 import HeaderHero from "../components/shared/HeaderHero";
-import Card from "../components/shared/Card";
-import Paddings from "../components/shared/paddings";
-
-import profile from "../assets/card.jpg";
 
 import Profile from "../components/about/Profile";
 export default function About() {
