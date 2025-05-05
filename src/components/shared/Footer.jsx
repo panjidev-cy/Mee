@@ -26,9 +26,9 @@ function ListNav({ list, title }) {
           return (
             <li key={index} className="list-none">
               {isInternal ? (
-                <Link to={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800">
+                <a href={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800">
                   {item.name}
-                </Link>
+                </a>
               ) : (
                 <a href={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800" target="_blank" rel="noopener noreferrer">
                   {item.name}
