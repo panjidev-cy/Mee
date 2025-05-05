@@ -25,18 +25,18 @@ const social = [
 function ListNav({ list, title }) {
   return (
     <div className="flex flex-col gap-4">
-      <h5 className="text-[clamp(13px,1.4vw,15px)] font-semibold text-slate-800">{title}</h5>
+      <h5 className="text-[clamp(10px,1.4vw,13px)] font-medium text-slate-500">{title}</h5>
       <ul className="flex gap-2 items-start flex-col">
         {list.map((item, index) => {
           const isInternal = item.link.startsWith("/"); // cek langsung dari item.link
           return (
             <li key={index} className="list-none">
               {isInternal ? (
-                <a href={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800">
+                <a href={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800">
                   {item.name}
                 </a>
               ) : (
-                <a href={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800" target="_blank" rel="noopener noreferrer">
+                <a href={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800" target="_blank" rel="noopener noreferrer">
                   {item.name}
                 </a>
               )}
@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="flex md:flex-col">
           <div className="flex-1">
             <h5 className="text-[clamp(14px,1.7vw,16px)] font-semibold text-slate-600">About Me</h5>
-            <p className="text-[clamp(13px,1.4vw,15px)] font-medium text-slate-800 w-4/5 lg:w-3/5 mt-4">
+            <p className="text-[clamp(12px,1.4vw,13px)] font-normal text-slate-800 w-4/5 lg:w-3/5 mt-4">
               I'm Panji Bhekti, a <b>full-stack engineer</b> who loves intuitive, clean and modern UI design.
             </p>
           </div>
