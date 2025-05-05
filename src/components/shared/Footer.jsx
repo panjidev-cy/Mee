@@ -1,80 +1,3 @@
-// import { Link } from "react-router-dom";
-
-// import Paddings from "./paddings";
-
-// let nav = [
-//   { name: "Home", link: "/" },
-//   { name: "About", link: "/about" },
-//   { name: "Projects", link: "/projects" },
-//   { name: "Contact", link: "/contact" },
-// ];
-
-// let comunity = [{ name: "kopico", link: "#" }];
-// let social = [
-//   { name: "Github", link: "#" },
-//   { name: "Linkedin", link: "#" },
-//   { name: "Instagram", link: "#" },
-// ];
-
-// function ListNav({ list, title, navigation }) {
-//   return (
-//     <div className="flex flex-col gap-4">
-//       <h5 className="text-[clamp(13px,1.4vw,15px)] font-semibold text-slate-800 ">{title}</h5>
-//       <div className="flex gap-2 items-start flex-col">
-//         {list.map((item, index) => {
-//           const isInternal = navigation && item.link.startsWith("/");
-
-//           return (
-//             <li key={index} className="list-none ">
-//               {isInternal ? (
-//                 <Link to={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800">
-//                   {item.name}
-//                 </Link>
-//               ) : (
-//                 <a href={item.link} className="text-sm font-medium text-slate-500 hover:text-slate-800">
-//                   {item.name}
-//                 </a>
-//               )}
-//             </li>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default function Footer() {
-//   return (
-//     <>
-//       <footer className="font-poppins">
-//         <Paddings>
-//           <div className="flex md:flex-col ">
-//             <div className="flex-1">
-//               <h5 className="text-[clamp(14px,1.7vw,16px)] font-semibold text-slate-600">About Me</h5>
-//               <p className="text-[clamp(13px,1.4vw,15px)] font-medium text-slate-800 w-4/5 lg:w-3/5  mt-4">
-//                 I'm Panji bhekti, a <b>full-stack engineer</b> who loves intuitive, clean and modern UI design.
-//               </p>
-//             </div>
-//             <div className="flex-1 flex gap-16  lg:my-5 justify-end lg:flex-wrap lg:justify-start">
-//               <ListNav list={nav} title="Next-page" />
-//               <ListNav comunity={comunity} title="Comunity" />
-//               <ListNav social={social} title="Social" />
-//             </div>
-//           </div>
-//         </Paddings>
-//         <div className="w-full h-auto bg-ghost_white mt-10">
-//           <Paddings>
-//             <div className="flex justify-between py-7">
-//               <p className="text-center text-slate-500 text-[clamp(11px,1.1vw,13px)] ">© 2023 vibloo</p>
-//               <p className="text-center text-slate-500 text-[clamp(11px,1.1vw,13px)]">lets work with me</p>
-//             </div>
-//           </Paddings>
-//         </div>
-//       </footer>
-//     </>
-//   );
-// }
-
 import { Link } from "react-router-dom";
 import Paddings from "./paddings";
 
@@ -122,7 +45,7 @@ function ListNav({ list, title }) {
 // ✅ Komponen Footer
 export default function Footer() {
   return (
-    <footer className="font-poppins">
+    <footer className="font-poppins mt-32">
       <Paddings>
         <div className="flex md:flex-col">
           <div className="flex-1">

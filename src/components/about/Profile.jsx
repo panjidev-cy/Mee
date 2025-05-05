@@ -1,6 +1,6 @@
 import CardTabel from "../shared/CardTable";
 import Paddings from "../shared/paddings";
-
+import LineTime from "../shared/LineTime";
 import image from "../../assets/card.jpg";
 
 let dataDiri = [
@@ -13,17 +13,13 @@ export default function Profile() {
   return (
     <>
       <Paddings>
-        <div className="py-3 px-8 border-l-[1.9px] border-slate-300 relative mt-10">
-          <div className="w-3 h-3 bg-periwinkle  absolute -top-1 -left-[6px] rounded-full flex items-center justify-center">
-            {" "}
-            <div className="w-2 h-2 bg-blue rounded-full"></div>
-          </div>
-          <h2 className="text-fluid-h2 font-poppins font-semibold text-slate-700 tracking-normal">Profile</h2>
-          <div className="flex  items-center justify-center md:flex-col mt-5 lg:mt-10">
-            <div className="flex-1 items-center justify-center w-full h-full">
-              <img src={image} alt="" className=" w-[clamp(200px,50vw,350px)] max-w-[350px]  rounded-xl" />
+        <div className="mt-10"></div>
+        <LineTime title="Profile" first="true">
+          <div className="flex  items-center justify-center gap-20 md:flex-col mt-5 lg:mt-10 ">
+            <div className="flex items-center justify-center w-auto h-full">
+              <img src={image} alt="" className=" w-[clamp(200px,50vw,300px)] max-w-[300px]  rounded-xl" />
             </div>
-            <div className="flex-1 md:w-full">
+            <div className=" w-auto md:w-full">
               <CardTabel title="Profile">
                 <div className="w-full mx-auto ">
                   <div className="grid grid-cols-[1fr,4fr] md:grid-cols-[1fr,3fr] md:gap-x-10 md:gap-y-2 gap-x-20 gap-y-5 text-slate-700  font-medium font-poppins text-[clamp(.8rem,2vw,1rem)] ">
@@ -40,7 +36,44 @@ export default function Profile() {
               </CardTabel>
             </div>
           </div>
-        </div>
+        </LineTime>
+        <LineTime>
+          <div className="">
+            <div className="inline-block">
+              <CardTabel title="" paddingX="px-1" paddingY="py-1">
+                <img src={image} alt="" className=" w-[clamp(200px,50vw,300px)] max-w-[300px]   rounded-br-xl rounded-bl-xl" />
+              </CardTabel>
+            </div>
+          </div>
+        </LineTime>
+        <LineTime title="Some Fun Facts 🤙">
+          <h2 className="text-fluid-h2 text-justify font-semibold font-poppins text-slate-700 w-4/5 mt-3 italic">
+            "-Build <span className="ml-4 text-blue">-Design</span> <span className="">-Repeat</span>"
+          </h2>
+          <h4 className="text-fluid-body text-justify font-normal font-poppins text-slate-600 w-4/5 mt-8">Aku fokus di:</h4>
+          <div className="ml-8 md:ml-0 mt-3">
+            <ul className="space-y-4">
+              {["Frontend Web Development (React, Tailwind, Framer Motion)", "UI/UX Design (Figma, Canva)", "Website Landing Page, Portofolio, dan E-commerce mini"].map((text, index) => {
+                const match = text.match(/^(.*?)\s*\((.*?)\)$/);
+
+                return (
+                  <li key={index} className="flex items-starts gap-3 text-slate-700 leading-relaxed">
+                    <span className="mt-1 w-3 h-3 rounded-sm bg-slate-600 flex-shrink-0" />
+                    <p className="text-fluid-caption text-justify font-medium font-poppins text-slate-800 w-4/5">
+                      {match ? (
+                        <>
+                          {match[1].trim()} <span className="font-normal text-slate-500">{match[2]}</span>
+                        </>
+                      ) : (
+                        text
+                      )}
+                    </p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </LineTime>
       </Paddings>
     </>
   );

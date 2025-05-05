@@ -7,7 +7,7 @@ import Footer from "../components/shared/Footer";
 export default function Home() {
   return (
     <>
-      <div className=" h-auto md:flex md:flex-col md:justify-end md:mt-11">
+      <div id="home" className=" h-auto md:flex md:flex-col md:justify-end md:mt-11">
         <Hero></Hero>
         <Tools></Tools>
       </div>
