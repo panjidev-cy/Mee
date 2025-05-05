@@ -7,6 +7,12 @@ const nav = [
   { name: "Projects", link: "/projects" },
   { name: "Contact", link: "/contact" },
 ];
+// const nav = [
+//   { name: "Home", link: "#" },
+//   { name: "About", link: "#about" },
+//   { name: "Projects", link: "#projects" },
+//   { name: "Contact", link: "#contact" },
+// ];
 
 const comunity = [{ name: "kopico", link: "#" }];
 const social = [
