@@ -25,7 +25,7 @@ const social = [
 function ListNav({ list, title }) {
   return (
     <div className="flex flex-col gap-4">
-      <h5 className="text-[clamp(10px,1.4vw,13px)] font-medium text-slate-500">{title}</h5>
+      <h5 className="text-[clamp(10px,1.4vw,13px)] font-normal text-slate-500">{title}</h5>
       <ul className="flex gap-2 items-start flex-col">
         {list.map((item, index) => {
           const isInternal = item.link.startsWith("/"); // cek langsung dari item.link
