@@ -4,7 +4,7 @@ import Paddings from "./paddings";
 const nav = [
   { name: "Home", link: "/" },
   { name: "About", link: "/about" },
-  { name: "Projects", link: "/projects" },
+  { name: "Project", link: "/project" },
   { name: "Contact", link: "/contact" },
 ];
 // const nav = [
@@ -32,9 +32,9 @@ function ListNav({ list, title }) {
           return (
             <li key={index} className="list-none">
               {isInternal ? (
-                <a href={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800">
+                <Link to={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800">
                   {item.name}
-                </a>
+                </Link>
               ) : (
                 <a href={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800" target="_blank" rel="noopener noreferrer">
                   {item.name}

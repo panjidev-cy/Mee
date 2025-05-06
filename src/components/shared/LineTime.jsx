@@ -1,11 +1,13 @@
-export default function LineTime({ children, title = "", first = false }) {
-  if (!title?.trim()) {
-    console.log("kosong");
-  }
+export default function LineTime({ children, title = "", first = false, end = false }) {
   return (
     <div className="py-3 px-8 border-l-[1.9px] border-slate-300 relative">
       {first && (
         <div className="w-3 h-3 bg-periwinkle absolute -top-1 -left-[6px] rounded-full flex items-center justify-center">
+          <div className="w-2 h-2 bg-blue rounded-full"></div>
+        </div>
+      )}
+      {end && (
+        <div className="w-3 h-3 bg-periwinkle absolute -bottom-1 -left-[6px] rounded-full flex items-center justify-center">
           <div className="w-2 h-2 bg-blue rounded-full"></div>
         </div>
       )}

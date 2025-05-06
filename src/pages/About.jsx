@@ -163,7 +163,7 @@ export default function About() {
           </ul>
         </LineTime>
 
-        <LineTime title="My Work Vibes">
+        <LineTime title="My Work Vibes" end="true">
           <h2 className="text-fluid-h2 italic font-semibold font-poppins text-slate-700 w-4/5 md:w-full mt-3">
             -Simple <span className="ml-4 text-blue">-Efisien</span> <span>-Estetik</span>
           </h2>
