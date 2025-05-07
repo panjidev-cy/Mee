@@ -7,7 +7,7 @@ export default function CardTabel({
   const isTitleEmpty = title.trim() === "";
 
   return (
-    <div className="w-full max-w-[50rem] h-auto rounded-2xl border-[1.4px] border-periwinkle overflow-hidden my-10 shadow-sm bg-white">
+    <div className="w-auto inline-block max-w-[50rem] h-auto rounded-2xl border-[1.4px] border-periwinkle overflow-hidden my-10 shadow-sm bg-white">
       {/* Header */}
       {isTitleEmpty ? (
         <div className="max-h-16 min-h-10 w-full flex items-center justify-between  px-3  py-3 border-b-[1.4px] border-periwinkle">
@@ -18,7 +18,7 @@ export default function CardTabel({
           </div>
         </div>
       ) : (
-        <div className="max-h-16 min-h-10 w-full flex items-center justify-between px-10 md:px-3  py-3 border-b-[1.4px] border-periwinkle">
+        <div className="max-h-16 min-h-10 w-full flex items-center justify-between px-5 md:px-3  py-2 border-b-[1.4px] border-periwinkle">
           <h3 className="font-poppins font-semibold text-slate-700 text-[clamp(1rem,3vw,1rem)]">{title}</h3>
         </div>
       )}
