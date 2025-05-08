@@ -1,7 +1,7 @@
 import Button from "../components/shared/Button";
 import Paddings from "../components/shared/paddings";
 
-import profile from "../assets/card.jpg";
+import profile from "../assets/dev.png";
 export default function Hero() {
   return (
     <>
