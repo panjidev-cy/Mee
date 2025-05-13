@@ -3,7 +3,6 @@ import Tools from "./section/tools";
 import ScrollingCards from "./section/ScrollingCard";
 import Project from "./section/Projects";
 import Faq from "./section/Faq";
-import Footer from "../../components/shared/Footer";
 import PageLayout from "../../layout/PageLayout";
 export default function Home() {
   return (
