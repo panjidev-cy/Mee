@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Paddings from "../components/shared/paddings";
+import Paddings from "../../../components/shared/paddings";
+import SectionTitleLayout from "../../../layout/SectionTitleLayout";
 
 const faqs = [
   { question: "Would you work without pay?", answer: "Only if it's for a noble cause or open source 😄." },
@@ -17,12 +18,9 @@ export default function Faq() {
   };
 
   return (
-    <Paddings>
-      <div className="w-full h-screen lg:h-auto px-4 py-16 font-poppins">
-        <h2 className="text-fluid-h2 font-bold text-center text-slate-600">Questions that nobody asked</h2>
-        <p className="text-center text-slate-500 text-lg mt-2 mb-8">But still may be helpful</p>
-
-        <div className="space-y-4">
+    <SectionTitleLayout title="Questions that nobody asked" description="But still may be helpful">
+      <Paddings>
+        <div className="space-y-4 mt-10 font-poppins">
           {faqs.map((faq, index) => (
             <div key={index} className=" rounded-lg overflow-hidden transition-all duration-300">
               <button onClick={() => toggleFAQ(index)} className="w-full flex justify-between items-center text-left p-4 font-medium text-slate-800 bg-white hover:bg-slate-50 transition">
@@ -36,9 +34,7 @@ export default function Faq() {
             </div>
           ))}
         </div>
-      </div>
-    </Paddings>
+      </Paddings>
+    </SectionTitleLayout>
   );
 }
-
-// max-w-3xl mx-auto

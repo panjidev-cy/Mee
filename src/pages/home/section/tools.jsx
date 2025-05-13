@@ -1,4 +1,4 @@
-import Paddings from "../components/shared/paddings";
+import Paddings from "../../../components/shared/paddings";
 
 export default function Tools() {
   let size = "34px";

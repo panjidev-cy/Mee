@@ -24,7 +24,7 @@ export default function LineTime({ children, title = "", first = false, end = fa
           </div>
 
           {/* Title */}
-          <h2 className="text-fluid-h3 font-poppins font-semibold text-slate-500 hover:text-slate-600 tracking-normal transition-all duration-300 group-hover:translate-x-2">{title}</h2>
+          <h4 className=" font-poppins font-medium hover:font-semibold text-slate-500 hover:text-slate-600 tracking-normal transition-all duration-300 group-hover:translate-x-2">{title}</h4>
         </div>
       )}
 

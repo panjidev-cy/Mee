@@ -18,12 +18,14 @@ export default {
     },
     extend: {
       fontSize: {
-        "fluid-h1": "clamp(3rem, 7vw, 6rem)",
-        "fluid-h2": "clamp(1.5rem, 4vw, 3rem)",
-        "fluid-h3": "clamp(1.25rem, 2vw, 2rem)",
-        "fluid-h4": "clamp(1rem, 1.8vw, 1.7rem)",
-        "fluid-body": "clamp(.8rem, 1.5vw, 1.25rem)",
-        "fluid-caption": "clamp(0.875rem, 1.5vw, 1rem)",
+        "fluid-h1": "clamp(3rem, 7vw, 6rem)", // 56px - 96px
+        "fluid-h2": "clamp(2.75rem, 5.5vw, 4rem)", // 44px - 72px
+        "fluid-h3": "clamp(2.25rem, 4.5vw, 2.8rem)", // 36px - 56px
+        "fluid-h4": "clamp(1rem, 3vw, 1.5rem)", // 16px - 28.8px
+        "fluid-h5": "clamp(.9rem, 2.8vw, 1rem)", // 16px - 28.8px
+        "fluid-h6": "clamp(.7rem, 2.2vw, .9rem)", // 20px - 28px
+        "fluid-body": "clamp(1.125rem, 2vw, 1.5rem)", // 18px - 24px
+        "fluid-caption": "clamp(0.8rem, 1.5vw, 1rem)", // 12.8px - 16px
       },
       colors: {
         // === White shades background ===
@@ -80,3 +82,12 @@ export default {
   },
   plugins: [],
 };
+
+// "fluid-h1": "clamp(3rem, 7vw, 6rem)",
+//         "fluid-h2": "clamp(1.5rem, 4vw, 3rem)",
+//         "fluid-h3": "clamp(1.25rem, 2vw, 2rem)",
+//         "fluid-h4": "clamp(1rem, 1.8vw, 1.7rem)",
+//         "fluid-h5": "clamp(.875rem, 1.5vw, 1.5rem)",
+//         "fluid-h6": "clamp(.75rem, 1.5vw, 1.25rem)",
+//         "fluid-body": "clamp(.8rem, 1.5vw, 1.25rem)",
+//         // "fluid-caption": "clamp(0.875rem, 1.5vw, 1rem)",

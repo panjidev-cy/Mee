@@ -1,8 +1,8 @@
-import HeaderHero from "../components/shared/HeaderHero";
-import Paddings from "../components/shared/paddings";
-import LineTime from "../components/shared/LineTime";
-import CardTabel from "../components/shared/CardTable";
-import Footer from "../components/shared/Footer";
+import HeaderHero from "../../components/shared/HeaderHero";
+import Paddings from "../../components/shared/paddings";
+import LineTime from "../../components/shared/LineTime";
+import CardTabel from "../../components/shared/CardTable";
+import PageLayout from "../../layout/PageLayout";
 export default function Contact() {
   const contactOptions = [
     { icon: "📩", label: "Email", value: "yourname@email.com", type: "email" },
@@ -35,7 +35,7 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <PageLayout>
       <HeaderHero
         headline="You have ideas. I have skills. Let’s talk!"
         subtitle="Let's chat together!"
@@ -71,8 +71,6 @@ Jangan malu-malu, inbox aku selalu terbuka 🙌`}
           </CardTabel>
         </LineTime>
       </Paddings>
-
-      <Footer />
-    </>
+    </PageLayout>
   );
 }
