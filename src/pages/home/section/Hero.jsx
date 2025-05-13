@@ -23,8 +23,8 @@ export default function Hero() {
               <LoveButton></LoveButton>
             </div>
           </div>
-          <div className=" h-full md:h-auto">
-            <img src={profile} alt="" width={330} className="rounded-3xl md:hidden mt-[40%]" />
+          <div className=" h-full md:h-auto  flex items-end pb-[5%]">
+            <img src={profile} alt="" width={330} className="rounded-3xl md:hidden " />
           </div>
         </div>
       </Paddings>
