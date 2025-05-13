@@ -14,11 +14,11 @@ const nav = [
 //   { name: "Contact", link: "#contact" },
 // ];
 
-const comunity = [{ name: "kopico", link: "#" }];
+const comunity = [{ name: "kopico", link: "https://kopico.vercel.app/" }];
 const social = [
-  { name: "Github", link: "#" },
+  { name: "Github", link: "https://github.com/panjidev-cy" },
   { name: "Linkedin", link: "#" },
-  { name: "Instagram", link: "#" },
+  { name: "Instagram", link: "https://www.instagram.com/panjiiinz?igsh=MXV2b3V6a29lNHNteg==" },
 ];
 
 // ✅ Nama fungsi dimulai dengan huruf kapital
