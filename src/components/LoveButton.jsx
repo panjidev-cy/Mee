@@ -30,7 +30,7 @@ function LoveButton() {
     }
   };
   return (
-    <button onClick={toggleLike} className="text-fluid-h4 font-poppins px-4 py-2 rounded transition-colors flex items-center gap-2">
+    <button onClick={toggleLike} className="text-fluid-h4 font-poppins px-4 py-2 rounded transition-colors flex items-center gap-2 text-slate-500 dark:text-floral-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 612 612"
@@ -51,9 +51,3 @@ function LoveButton() {
 }
 
 export default LoveButton;
-
-// return (
-//   <button onClick={toggleLike} className={`text-fluid-h4 font-poppins px-4 py-2 rounded transition-colors ${liked ? "text-red-500" : "text-gray-400"}`}>
-//     ❤️ {FormatNuber(likes)}
-//   </button>
-// );

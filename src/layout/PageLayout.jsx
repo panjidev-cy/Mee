@@ -1,13 +1,13 @@
 import PageTransitionLayout from "./PageTransitionLayout";
 import Footer from "../components/shared/Footer";
+import NavBar from "../components/navbar/NavBar";
 
 export default function PageLayout({ children }) {
   return (
-    <>
-      <PageTransitionLayout>
-        {children}
-        <Footer />
-      </PageTransitionLayout>
-    </>
+    <div>
+      <NavBar></NavBar>
+      <PageTransitionLayout>{children}</PageTransitionLayout>
+      <Footer />
+    </div>
   );
 }

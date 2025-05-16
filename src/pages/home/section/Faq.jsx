@@ -23,13 +23,13 @@ export default function Faq() {
         <div className="space-y-4 mt-10 font-poppins">
           {faqs.map((faq, index) => (
             <div key={index} className=" rounded-lg overflow-hidden transition-all duration-300">
-              <button onClick={() => toggleFAQ(index)} className="w-full flex justify-between items-center text-left p-4 font-medium text-slate-800 bg-white hover:bg-slate-50 transition">
-                <span>{faq.question}</span>
-                <ChevronDown className={`w-5 h-5 transform transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""}`} />
+              <button onClick={() => toggleFAQ(index)} className="w-full flex justify-between items-center text-left p-4 font-medium text-slate-800 bg-white dark:bg-transparent hover:bg-slate-50 transition">
+                <span className="dark:text-white  text-slate-700">{faq.question}</span>
+                <ChevronDown className={`w-5 h-5 transform transition-transform text-hunyadi-yellow duration-300 ${openIndex === index ? "rotate-180" : ""}`} />
               </button>
 
               <div className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
-                <div className="p-4 text-slate-600 bg-slate-50">{faq.answer}</div>
+                <div className="p-4 text-slate-600 dark:text-slate-400 bg-slate-50 dark:bg-transparent  ">{faq.answer}</div>
               </div>
             </div>
           ))}

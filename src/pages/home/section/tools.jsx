@@ -10,6 +10,7 @@ export default function Tools() {
           font-medium 
           font-poppins
           text-slate-700
+          dark:text-slate-200
       "
         >
           Tools & tech i use for web:

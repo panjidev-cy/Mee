@@ -12,19 +12,19 @@ const testimonials = [
 
 const ScrollingCards = () => {
   return (
-    <div className=" relative w-full h-auto overflow-hidden bg-white py-10 space-y-6">
-      <div className="absolute left-0 top-0 h-full w-[20%] bg-gradient-to-r from-white via-white/85 to-transparent z-10" />
-      <div className="absolute right-0 top-0 h-full w-[20%] bg-gradient-to-l from-white via-white/85 to-transparent z-10" />
+    <div className=" relative w-full h-auto overflow-hidden  py-10 space-y-6">
+      <div className="absolute left-0 top-0 h-full w-[20%] bg-gradient-to-r from-white via-white/85 to-transparent dark:bg-gradient-to-r dark:from-dark dark:via-dark/95 dark:to-transparent z-10" />
+      <div className="absolute right-0 top-0 h-full w-[20%] bg-gradient-to-l from-white via-white/85 to-transparent z-10 dark:bg-gradient-to-l dark:from-dark dark:via-dark/95 dark:to-transparent" />
 
       {/* Baris 1 - Kiri */}
       <div className="group font-poppins">
         <div className="flex w-max gap-4 animate-scroll px-8 group-hover:[animation-play-state:paused]">
           {testimonials.concat(testimonials).map((testimonial, index) => (
-            <div key={`row1-${index}`} className="bg-white-ghost rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
+            <div key={`row1-${index}`} className="bg-slate-50 dark:bg-black rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue to-white rounded-full"></div>
                 <div>
-                  <p className="font-semibold text-slate-700">{testimonial.name}</p>
+                  <p className="font-semibold text-slate-700 dark:text-slate-300">{testimonial.name}</p>
                   <p className="text-sm text-gray-500">{testimonial.username}</p>
                 </div>
               </div>
@@ -42,7 +42,7 @@ const ScrollingCards = () => {
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-yellow-500 rounded-full"></div>
                 <div>
-                  <p className="font-semibold text-slate-700">{testimonial.name}</p>
+                  <p className="font-semibold text-slate-700 dark:text-slate-300">{testimonial.name}</p>
                   <p className="text-sm text-gray-500">{testimonial.username}</p>
                 </div>
               </div>
