@@ -7,7 +7,7 @@ import PageLayout from "../../layout/PageLayout";
 export default function Home() {
   return (
     <PageLayout>
-      <div id="home" className=" h-auto md:flex md:flex-col md:justify-end md:mt-11">
+      <div id="home" className=" h-auto md:flex md:flex-col md:justify-end md:mt-32">
         <Hero></Hero>
         <Tools></Tools>
       </div>
