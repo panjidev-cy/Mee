@@ -130,8 +130,11 @@ function ListLink() {
   return (
     <>
       {nav.map((item, index) => (
-        <li key={index} className="list-none">
-          <Link to={item.link} className="text-sm font-medium text-slate-700 hover:text-slate-800 dark:text-blue-light dark:hover:text-blue">
+        <li key={index} className="list-none w-full">
+          <Link
+            to={item.link}
+            className="block text-[13px]  font-semibold text-slate-700 hover:text-slate-800 dark:text-blue-light dark:hover:text-blue md:w-full md:py-1 md:hover:bg-slate-200 dark:md:hover:bg-slate-900 md:rounded-lg md:px-2"
+          >
             {item.name}
           </Link>
         </li>
@@ -224,7 +227,7 @@ export default function NavBar() {
         <AnimatePresence>
           {buttonNav && (
             <motion.div ref={dropdownRef} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }} className="fixed top-20 left-3 z-30 w-fit">
-              <ul className="flex flex-col gap-4 px-6 py-4 bg-slate-100 dark:bg-slate-800 rounded-xl border dark:border-slate-700 shadow-md w-fit">
+              <ul className="flex flex-col font-poppins gap-1 px-1 py-2 bg-slate-100 dark:bg-slate-800 rounded-xl border dark:border-slate-700 shadow-md w-36 ">
                 <ListLink />
               </ul>
             </motion.div>
