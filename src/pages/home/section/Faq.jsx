@@ -4,10 +4,10 @@ import Paddings from "../../../components/shared/paddings";
 import SectionTitleLayout from "../../../layout/SectionTitleLayout";
 
 const faqs = [
-  { question: "Would you work without pay?", answer: "Only if it's for a noble cause or open source 😄." },
-  { question: "How to get kawai waifu?", answer: "Be yourself. Or... learn to draw anime." },
-  { question: "How to get a job?", answer: "Build skills, network, and apply smartly!" },
-  { question: "What's the meaning of life?", answer: "42... or whatever brings you purpose." },
+  { question: "Bisa bantu bikin website dari nol?", answer: "Bisa banget! Mulai dari desain sampai online, semua bisa gue bantu. Kamu tinggal duduk santai, nanti gue yang kerjain 😎" },
+  { question: "Cuma bikin website doang?", answer: "Nggak cuma itu. Gue juga bisa bantu desain, bikin landing page kece, atau bahkan bantu kamu mikirin konsepnya dari awal." },
+  { question: "Pake apa buat bikin webnya?", answer: "Biasanya gue pake React + Tailwind CSS, tapi tergantung kebutuhan juga. Intinya gue bakal pilih yang paling cocok dan ringan buat kamu." },
+  { question: "Bisa nanya-nanya dulu sebelum mulai?", answer: "Wajib malah! Yuk ngobrol dulu, gratis kok. Siapa tau cocok 😄" },
 ];
 
 export default function Faq() {

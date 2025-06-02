@@ -86,7 +86,7 @@ export default function NavBar() {
   return (
     <>
       {/* Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 h-16 py-3 bg-white/40 dark:bg-dark/40 backdrop-blur-md font-poppins transition-all duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 h-16 py-3 bg-white/60 dark:bg-dark/60 backdrop-blur-lg font-poppins transition-all duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"}`}>
         <Paddings>
           <div className="flex justify-between items-center h-full">
             {/* Desktop menu */}
