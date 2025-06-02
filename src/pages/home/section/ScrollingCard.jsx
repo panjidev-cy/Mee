@@ -20,7 +20,7 @@ const ScrollingCards = () => {
       <div className="group font-poppins">
         <div className="flex w-max gap-4 animate-scroll px-8 group-hover:[animation-play-state:paused]">
           {testimonials.concat(testimonials).map((testimonial, index) => (
-            <div key={`row1-${index}`} className="bg-slate-50 dark:bg-black rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
+            <div key={`row1-${index}`} className="bg-slate-100 dark:bg-gray-900 rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-r from-blue to-white rounded-full"></div>
                 <div>
@@ -38,7 +38,7 @@ const ScrollingCards = () => {
       <div className="group font-poppins">
         <div className="flex w-max gap-4 animate-scrollReverse px-8 group-hover:[animation-play-state:paused]">
           {testimonials.concat(testimonials).map((testimonial, index) => (
-            <div key={`row2-${index}`} className="bg-white-blue rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
+            <div key={`row2-${index}`} className="bg-slate-100 dark:bg-gray-900 rounded-2xl p-4 text-black shadow-md w-64 flex-shrink-0">
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-yellow-500 rounded-full"></div>
                 <div>
