@@ -86,7 +86,7 @@ export default function NavBar() {
   return (
     <>
       {/* Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 z-50 h-16 py-3 bg-white dark:bg-dark font-poppins transition-all duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 h-16 py-3 bg-white/40 dark:bg-dark/40 backdrop-blur-md font-poppins transition-all duration-300 ${showNav ? "translate-y-0" : "-translate-y-full"}`}>
         <Paddings>
           <div className="flex justify-between items-center h-full">
             {/* Desktop menu */}
@@ -112,7 +112,7 @@ export default function NavBar() {
         <AnimatePresence>
           {buttonNav && (
             <motion.div ref={dropdownRef} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }} className="fixed top-20 left-3 z-30 w-fit">
-              <ul className="flex flex-col font-poppins gap-1 px-1 py-2 bg-slate-100 dark:bg-slate-800 rounded-xl border dark:border-slate-700 shadow-md w-36 ">
+              <ul className="flex flex-col font-poppins gap-1 px-1 py-2 bg-slate-100  dark:bg-slate-800 rounded-xl border dark:border-slate-700 shadow-md w-36 ">
                 <ListLink />
               </ul>
             </motion.div>
